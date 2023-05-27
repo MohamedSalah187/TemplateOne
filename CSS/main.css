@@ -1,5 +1,11 @@
 /* Variables */
-
+:root {
+    --main-color: #10cab7;
+    --secondary-color: #2c4755;
+    --section-padding: 60px;
+    --section-background: #f6f6f6;
+    --main-duration: 0.5s;
+  }
 
 
 /* Global Rules */
@@ -10,3 +16,136 @@
 body {
     font-family: "Work Sans" , sans-serif;
 }
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+
+  }
+
+  /* Header ==>> Nav */
+
+  .header {
+    padding-top: 1rem;
+  }
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 2rem;
+    width: 4rem;
+}
+
+.links{
+    display: none;
+}
+
+
+.links ul {
+    display: flex;
+    column-gap: 2rem;
+    list-style: none;
+}
+
+
+.links ul li a {
+    text-decoration: none;
+    color: black ;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.links ul li a:hover {
+     color: var(--main-color) ;
+}
+
+
+.MobileLinks{
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.MobileLinksUl ul {
+    list-style: none;
+}
+
+.MobileLinksUl ul li {
+    margin-top: 0.8rem;
+}
+
+
+.MobileLinksUl ul li a {
+    text-decoration: none;
+    color: black ;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.MobileLinksUl ul li a:hover {
+     color: var(--main-color) ;
+}
+
+/* Small */
+@media (min-width: 768px) {
+
+    #MobileIcon{
+        display:block;
+    }
+
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    
+
+    #MobileIcon{
+        display:none;
+    }
+
+    .links{
+        display: block;
+    }
+
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    
+
+    #MobileIcon{
+        display: none;
+    }
+
+    .links{
+        display: block;
+    }
+
+  }
