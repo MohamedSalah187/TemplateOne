@@ -92,6 +92,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background-color: #d3d3d338;
 }
 
 
@@ -103,16 +104,22 @@ body {
     margin-top: 0.8rem;
 }
 
+.MobileLinksUl ul li:not(:last-child)  {
+    border-bottom :#2c4755 2px solid ;
+}
+
 
 .MobileLinksUl ul li a {
     text-decoration: none;
     color: black ;
     font-size: 1.1rem;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 .MobileLinksUl ul li a:hover {
      color: var(--main-color) ;
+     padding-left: 1rem;
 }
 
 /* Small */
@@ -149,3 +156,93 @@ body {
     }
 
   }
+
+
+
+  /* Landing Section  */
+.landing {
+    background-image: url(/Images/landing.jpg);
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 5rem);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.landing .intro-text {
+    max-width: 20rem;
+}
+
+.landing .intro-text h1 {
+    text-align: center;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.landing .intro-text p {
+    text-align: center;
+    line-height: 1.8;
+    font-size: 1.2rem;
+}
+
+
+/* Features */
+.feature{
+    background-color: var(--section-background);
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.feature .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(20rem , 1fr) );
+    column-gap: 1rem;
+    text-align: center;
+}
+
+.feature .container i{
+    color: var(--main-color);
+}
+
+.feature .container p{
+    line-height: 1.8;
+    color: #777;
+    text-align: center;
+}
+
+.feature .container .feat {
+    padding-right: 3rem;
+    padding-left: 3rem;
+    margin-top: 2rem;
+}
+
+/* @media (min-width: 768px) {
+    .feature .container .feat {
+      max-width: 100%;
+    }
+  }
+  /* Medium */
+  /* @media (min-width: 992px) {
+    .feature .container .feat {
+        max-width: 50%;
+      }
+  } */
+  /* Large */
+  /* @media (min-width: 1200px) {
+    .feature .container .feat {
+        max-width: calc( 100% / 3);
+      }
+  } */ 
+
+
+
+
+
+  
+  
+
+
