@@ -564,6 +564,20 @@ body {
 }
 
 
+/* Footer */
+.footer{
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem ;
+    font-size: 1.2rem;
+}
+
+.footer-content span {
+    font-weight: bold;
+    color: var(--main-color);
+}
+
 
 
   
